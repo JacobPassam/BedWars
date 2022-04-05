@@ -1,0 +1,5 @@
+name: BedWars
+version: '${version}'
+main: com.github.jacobpassam.bedwars.BedWars
+authors: [ Embrasure ]
+description: BedWars experimental plugin
