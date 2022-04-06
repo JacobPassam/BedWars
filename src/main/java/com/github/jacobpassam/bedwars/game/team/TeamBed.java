@@ -7,6 +7,6 @@ import org.bukkit.Location;
 public class TeamBed {
 
     private final Location location;
-    private boolean destroyed;
+    private boolean destroyed = false;
 
 }

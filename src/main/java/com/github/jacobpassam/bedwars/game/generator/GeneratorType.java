@@ -1,18 +1,12 @@
 package com.github.jacobpassam.bedwars.game.generator;
 
-import lombok.Getter;
 import org.bukkit.Material;
 
-@Getter
-public enum GeneratorType {
+public interface GeneratorType {
 
-    FORGE(Material.IRON_INGOT, Material.GOLD_INGOT),
-    DIAMOND(Material.DIAMOND),
-    EMERALD(Material.EMERALD);
+    Material[] getMaterials();
 
-    private final Material[] materials;
+    boolean isFancy();
+    GeneratorConfiguration[] getConfigurations();
 
-    GeneratorType(Material... materials) {
-        this.materials = materials;
-    }
 }

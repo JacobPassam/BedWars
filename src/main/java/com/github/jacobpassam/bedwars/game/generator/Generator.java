@@ -9,10 +9,6 @@ public class Generator {
     private final GeneratorType type;
     private final Location location;
 
-    private int level;
-
-    private final GeneratorConfiguration[] configurations;
-
-    private final boolean fancy;
+    private int level = 0;
 
 }

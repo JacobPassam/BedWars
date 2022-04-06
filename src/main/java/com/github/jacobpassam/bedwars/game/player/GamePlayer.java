@@ -10,6 +10,6 @@ public class GamePlayer {
     private final UUID uuid;
     private final String name;
 
-    private boolean left;
+    private boolean left = false;
 
 }

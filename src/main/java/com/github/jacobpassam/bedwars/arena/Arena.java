@@ -1,23 +1,25 @@
 package com.github.jacobpassam.bedwars.arena;
 
 import com.github.jacobpassam.bedwars.game.generator.GeneratorType;
+import com.github.jacobpassam.bedwars.game.team.TeamColour;
+import lombok.Data;
 import org.bukkit.Location;
 
 import java.util.HashMap;
 import java.util.Map;
 
+@Data
 public class Arena {
 
     private final String name;
 
-    private Map<GeneratorType, Location> generators;
+    private final Location waitingLobby;
 
-    private int teamCount;
-    private int maxPerTeam;
+    private final Map<GeneratorType, Location> generators;
 
-    public Arena(String name) {
-        this.name = name;
+    private final int teamCount;
+    private final int maxPerTeam;
 
-        this.generators = new HashMap<>();
-    }
+    private final Map<TeamColour, TeamLocationData> teamData;
+
 }
