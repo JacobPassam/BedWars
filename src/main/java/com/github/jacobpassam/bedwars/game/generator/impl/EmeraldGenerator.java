@@ -12,6 +12,11 @@ public class EmeraldGenerator implements GeneratorType {
     }
 
     @Override
+    public boolean isFancy() {
+        return true;
+    }
+
+    @Override
     public GeneratorConfiguration[] getConfigurations() {
         return null;
     }

@@ -12,6 +12,11 @@ public class ForgeGenerator implements GeneratorType {
     }
 
     @Override
+    public boolean isFancy() {
+        return false;
+    }
+
+    @Override
     public GeneratorConfiguration[] getConfigurations() {
         return null;
     }

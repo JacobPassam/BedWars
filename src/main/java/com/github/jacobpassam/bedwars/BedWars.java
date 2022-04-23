@@ -1,5 +1,6 @@
 package com.github.jacobpassam.bedwars;
 
+import com.github.jacobpassam.bedwars.command.internal.CommandHandler;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class BedWars extends JavaPlugin {
@@ -8,6 +9,7 @@ public final class BedWars extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
 
+        CommandHandler commandHandler = new CommandHandler(this);
     }
 
     @Override
